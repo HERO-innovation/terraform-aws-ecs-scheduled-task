@@ -96,6 +96,7 @@ module "ecs_scheduled_task" {
 | security_groups                | The security groups associated with the task or service.                          |  list  |          `[]`          |    no    |
 | tags                           | A mapping of tags to assign to all resources.                                     |  map   |          `{}`          |    no    |
 | task_count                     | The number of tasks to create based on the TaskDefinition.                        | string |          `1`           |    no    |
+| task_role_arn                  | The ARN of IAM role that allows your Amazon ECS container task to make calls to other AWS services. | string | `null` | no |
 
 ## Outputs
 
